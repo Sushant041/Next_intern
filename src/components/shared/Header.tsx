@@ -10,7 +10,7 @@ import { ModeToggle } from '../DarkLight'
 
 const Header = () => {
   return (
-    <header className='w-full sticky top-0 bg-white dark:bg-gray-700'>
+    <header className='w-full sticky z-10 top-0 bg-white dark:bg-gray-700'>
       <div className="wrapper flex items-center justify-between">
       <Link href="/" className='sidebar-logo'>
              <Image src={img} alt="logo" width={50} style={{borderRadius: "50%"}} />
@@ -31,7 +31,7 @@ const Header = () => {
           <MobileNav />
         </SignedIn>
        <SignedOut>
-          <Button asChild className='rounded-full bg-black text-white' size="lg">
+          <Button asChild className='rounded-full hover:bg-gray-1000 hover:opacity-70  bg-black text-white' size="lg">
             <Link href="/sign-in">
               Login
             </Link>
